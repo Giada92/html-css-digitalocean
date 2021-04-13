@@ -1,0 +1,157 @@
+/* Debug */
+/* [class*="col-"] {
+    background-color: tomato;
+    min-height: 100px;
+    border: 1px solid black;
+} */
+
+/* common */
+body {
+    padding-top: 70px;
+    font-family: 'Roboto', sans-serif;
+    color: #041d4e;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #a9c0ff;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.txt_white {
+    color: white;
+}
+.txt_light_blue {
+    color: #056dff;
+}
+
+/* /common */
+
+/* Header - Navbar */
+.ms_navbar {
+    background-color: white;
+}
+
+.ms_navbar .navbar-brand {
+    height: 70px;
+}
+
+.ms_navbar .navbar-brand > img {
+    height: 90%;
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.ms_navbar .navbar-nav > li {
+    height: 60px;
+    line-height: 70px;
+}
+
+.ms_navbar .navbar-nav>li>a:not(.btn) {
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #263b66;
+}
+
+.ms_navbar .navbar-toggle {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.ms_navbar .navbar-toggle .icon-bar {
+    background-color: #3b8bff;   
+}
+
+.ms_navbar span {
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.ms_navbar .nav>li>a:focus,
+.ms_navbar .nav>li>a:hover {
+    background-color: white;
+}
+
+.ms_navbar .navbar-nav>li>a.btn_nav {
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: 600;
+}
+
+.btn {
+    border: 1px solid #509aff;
+}
+.ms_navbar .navbar-nav > li > a.btn_nav:hover {
+    background-color: #509aff;
+    color: white;
+}
+
+/* Jumbotron - Navbar */
+#jumbotron {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../img/bg-banner-home.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ms_form {
+    padding: 30px 15px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.ms_btn {
+    background-color: #579aff;
+    border: 1px solid #579aff;
+}
+.ms_btn_withe {
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px lightgray;
+}
+
+.ms_form i {
+    display: inline-block;
+    text-align: left;
+}
+
+.service {
+    color: #187aff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* MEDIA */
+@media (min-width: 768px) {
+    /* Jumbotron */
+    p {
+        font-size: 20px;
+        line-height: 1.6em;
+        color: #a9c0ff;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    /* Jumbotron */
+    h1 {
+        font-size: 65px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 1.5em;
+    }
+}

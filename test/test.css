@@ -1,3 +1,7 @@
+/* .ms_navbar {
+    background-color: white;
+}
+
 .ms_navbar .navbar-brand {
     height: 60px;
 }
@@ -14,6 +18,7 @@
 .ms_navbar .navbar-nav>li>a:not(.btn) {
     line-height: 40px;
     font-size: 16px;
+    font-weight: 600;
     color: #263b66;
 }
 
@@ -43,11 +48,30 @@
 .ms_navbar .navbar-nav>li>a.btn_nav {
     display: inline-block;
     padding: 6px 12px;
+    font-weight: 600;
 }
 
-@media (max-width: 992px) {
+.ms_navbar .navbar-nav > li > a.btn_nav:hover {
+    background-color: #509aff;
+    color: white;
+}
+
+@media (min-width: 768px) {
     
-    .ma_navbar .navbar-nav {
-        display: none;        
+    .ma_navbar .navbar-toggle {
+        display: inline;
+        visibility: visible;       
     }
 }
+
+body {
+    padding-top: 60px;
+}
+
+#jumbotron {
+    height: 550px;
+    background-image: url("../img/bg-banner-home.jpg");
+    background-size: cover;
+    background-position: center;
+}
+ */
