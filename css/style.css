@@ -3,38 +3,40 @@
     background-color: tomato;
     min-height: 100px;
     border: 1px solid black;
-}  */
-
+} 
+ */
 /* common */
 body {
     padding-top: 70px;
     font-family: 'Roboto', sans-serif;
     color: #041d4e;
 }
-
-p {
-    font-size: 18px;
-    line-height: 1.5em;
-    color: #a9c0ff;
-}
-
+/* Fonts */
 h2 {
     margin-top: 10px;
 }
 
-.txt_white {
+.md_text {
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #a9c0ff;
+}
+.sm_text {
+    font-size: 16px;
+}
+
+.c_white {
     color: white;
 }
-.txt_light_blue {
+.c_light_blue {
     color: #056dff;
+}
+.c_grey {
+    color: #677490;
 }
 
 .bg_grey {
     background-color: #f3f5f9;
-}
-
-.c_grey {
-    color: #677490;
 }
 
 .ms_link {
@@ -178,12 +180,16 @@ h2 {
 /* Main - Sezione deploy and scale */
 #deploy_scale {
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+}
+
+.wrapper_text {
+    margin-bottom: 50px;
 }
 
 .ms_list {
-    margin-top: 50px;
-    padding: 0 5px;
+    padding: 5px;
+    margin-bottom: 20px;
     list-style: none;
     border-left: 1px solid grey;
 }
@@ -191,11 +197,18 @@ h2 {
 .ms_list > li {
     margin: 20px 0;
 }
-
+.ms_list > li:first-child {
+    margin-top: 0;
+}
+.ms_list > li:last-child {
+    margin-bottom: 0;
+}
 .ms_list > li > a {
     font-size: 18px;
     color: #677490;
 }
+
+
 
 
 
@@ -212,12 +225,20 @@ h2 {
 
     /* Main */
     #deploy_scale h2 {
-        font-size: 32px;
+        font-size: 34px;
         font-weight: 600;
+    }
+
+    .ms_list {
+        margin-left: 70px;
+    }
+    
+    .container_deploy {
+        min-height: 200px;
     }
 }
 
-/* Per gestire l'humburger icoi */
+/* Per gestire l'humburger icon */
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-header {
         float: none;
@@ -255,6 +276,11 @@ h2 {
     .ms_navbar .nav>li>a {
         padding: 15px 10px;
     }
+
+    /* Main */
+    .container_deploy {
+        min-height: 200px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -266,5 +292,10 @@ h2 {
     p {
         font-size: 22px;
         line-height: 1.5em;
+    }
+
+    /* Main */
+    .container_deploy {
+        min-height: 200px;
     }
 }
