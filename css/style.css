@@ -244,6 +244,7 @@ figcaption {
 .wrapper_circle > li {
     display: inline-block;
 }
+
 .wrapper_circle > li i {
     color: #187aff;
 }
@@ -252,13 +253,54 @@ figcaption {
     border-radius: 50%;
 } 
 
-
 figure > i {
     margin: 0 10px;
     font-size: 35px;
 }
 
+/* Main - Sezione features */
+#features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+#features h2,
+#customers h2 {
+    margin-bottom: 30px;
+}
+
+.ms_space {
+    margin-bottom: 20px;
+}
+
+#features img {
+    margin-bottom: 10px;
+}
+
+/* Main - Sezione service customers */
+#customers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, #0046c4, #00209b);
+}
+
+#customers p {
+    margin: 10px 0 10px 0;
+}
+#customers a {
+    margin: 10px 0 10px 0;
+}
+
+.speed {
+    display: inline-block;
+    color: #00c1ce;
+}
+
+.ms_table {
+    border-bottom: 1px solid white;
+}
 
 
 
@@ -287,6 +329,11 @@ figure > i {
 
     figure {
         margin: 100px 0 80px 0;
+    }
+
+   #customers p {
+        font-size: 14px;
+        color: #677490;
     }
 }
 
