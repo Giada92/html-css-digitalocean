@@ -95,6 +95,7 @@ h2 {
 .ms_navbar .nav>li>a:focus,
 .ms_navbar .nav>li>a:hover {
     background-color: white;
+    color: #3b8bff;
 }
 
 .ms_navbar .navbar-nav>li>a.btn_nav {
@@ -309,13 +310,13 @@ figure > i {
 .slider {
     margin: 100px 0 50px 0;
     padding: 50px 0;
-    width: 300px;
+    min-height: 300px;
     display: inline-block;
     background-color: white;
 }
 
 .slider > img {
-    width: 300px;
+    max-width: 90%;
 }
 
 #development p {
@@ -331,11 +332,8 @@ figure > i {
 
 #development .fa-chevron-left {
     text-align: left;
-    display: inline-block;
-    position: absolute;
-    margin-right: 30px;
-    left: 25%;
-    top: 50%;
+  /*   left: 25%;
+    top: 50%; */
 }
 
 #development .fa-chevron-right {
@@ -361,7 +359,7 @@ figure > i {
 footer {
     background-color: #031c4e;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     font-weight: bold;
     color: #7e88a0;
 }
@@ -416,8 +414,6 @@ footer p {
 
 .chat_img {
     width: 70px;
-    background-color: white;
-    overflow: hidden;
     margin-bottom: 20px;
     
 }
@@ -425,8 +421,20 @@ footer p {
 .chat_img > img {
     max-width: 100%;
     background-color:  #187aff;
-    border-radius: 5px;
+    border-radius: 5%;
+    position: relative;
 }
+
+.badge {
+    position: absolute;
+    top:-15%;
+    left: 50%;
+    font-size: 16px;
+    background-color: red;
+    border: 3px solid white;
+    border-radius: 14px;
+    z-index: 3;
+} 
 
 .help {
     width: 300px;
@@ -434,6 +442,7 @@ footer p {
     background-color: white;
     border-radius: 10px;
     position: relative;
+    z-index: 2;
 }
 
 .help i {
@@ -442,15 +451,6 @@ footer p {
     font-size: 30px;
     color: white;
 }
-
-
-/* Debug */
-/* [class*="col-"] {
-    background-color: tomato;
-    min-height: 100px;
-    border: 1px solid black;
-} 
- */
 
 /* MEDIA */
 @media (min-width: 768px) {
@@ -493,6 +493,17 @@ footer p {
         font-size: 14px;
         color: #7e88a0;
     }
+
+    .help p {
+        font-size: 14px;
+        color: #041d4e
+    }
+
+    /* Bottone */
+    .badge {
+        top:-15%;
+        left: 25%;
+    } 
 }
 
 /* Per gestire l'humburger icon */
@@ -550,6 +561,16 @@ footer p {
     .slider {
         width: 400px;
     }
+
+    .help p {
+        font-size: 16px;
+    }
+
+    /* Bottone */
+    .badge {
+        top: -15%;
+        left: 80%;
+    } 
 }
 
 @media (min-width: 1200px) {
@@ -581,8 +602,29 @@ footer p {
     }
 
     /* Footer */
+    footer {
+        padding-bottom: 60px;
+    }
+
     footer .row > [class*="col-"]:not(:first-child)  {
         margin-top: 30px;
     }
     
+
+    /* Bottone */
+      .chat {
+        bottom: 0;
+        left: 65%;
+        margin-bottom: 20px;
+    } 
+
+    .chat_img > img {
+        margin-left: 20px;
+    }
+
+    .badge {
+        top: -15%;
+        left: 90%;
+    } 
+ 
 }
