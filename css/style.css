@@ -304,19 +304,18 @@ figure > i {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    position: relative;
 }
 
 .slider {
     margin: 100px 0 50px 0;
     padding: 50px 0;
-    min-height: 300px;
+    width: 300px;
     display: inline-block;
     background-color: white;
 }
 
 .slider > img {
-    max-width: 90%;
+    width: 300px;
 }
 
 #development p {
@@ -330,14 +329,21 @@ figure > i {
     position: absolute;
 }
 
+.wrapper_slide {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
 #development .fa-chevron-left {
     text-align: left;
-  /*   left: 25%;
-    top: 50%; */
+    left: 0;
+    top: 50%;
 }
 
 #development .fa-chevron-right {
     margin-left: 10px;
+    right: 0;
     top: 50%;
 }
 
@@ -401,8 +407,14 @@ footer p {
 
 .footer_list  a{
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
+
+.footer_list  a:hover {
+    color: #187aff;
+    text-decoration: none;
+}
+
 
 /* Bottone fisso in basso */
 .chat {
@@ -484,6 +496,10 @@ footer p {
         color: white;
     }
 
+    .wrapper_slide {
+        width: 70%;
+    }
+
     .slider {
         width: 400px;
     }
@@ -558,6 +574,10 @@ footer p {
         margin: 60px 0 30px 0;
     }
 
+    .wrapper_slide {
+        width: 60%;
+    }
+
     .slider {
         width: 400px;
     }
@@ -595,6 +615,10 @@ footer p {
 
     figure {
         margin: 60px 0 30px 0;
+    }
+
+    .wrapper_slide {
+        width: 60%;
     }
 
     .slider {
