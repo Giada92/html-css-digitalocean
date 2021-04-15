@@ -292,6 +292,9 @@ figure > i {
 #customers a {
     margin: 10px 0 10px 0;
 }
+#customers a:hover {
+    color: white;
+}
 
 .speed {
     display: inline-block;
@@ -347,6 +350,22 @@ figure > i {
     top: 50%;
 }
 
+/* Main - Sezione get started */
+#get_started {
+    min-height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, #0046c4, #00209b);
+}
+
+#get_started button {
+    margin-top: 20px;
+}
+
+
+
 /* MEDIA */
 @media (min-width: 768px) {
     /* Jumbotron */
@@ -376,7 +395,7 @@ figure > i {
 
    #customers p {
         font-size: 14px;
-        color: #677490;
+        color: white;
     }
 
     .slider {

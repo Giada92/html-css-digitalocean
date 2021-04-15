@@ -75,3 +75,50 @@ body {
     background-position: center;
 }
  */
+
+/* 
+ #development {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: lightgray;
+    min-height: 500px;
+    text-align: center;
+    
+}
+
+.prova {
+    min-height: 300px;
+    position: relative;
+    
+}
+
+.container_slider {
+    width: 500px;
+    padding: 20px 10px;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.container_slider > img {
+    width: 100%;
+}
+
+p {
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+.fa-chevron-left {
+    margin-right: 50px;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    top:50%;
+    font-size: 30px;
+}
+
+._rotate {
+    transform: rotate(180deg);
+} */
